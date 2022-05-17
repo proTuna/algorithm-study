@@ -30,7 +30,7 @@ for i in range(2,n):
         d = right_prefix_sum[i-1] - right_prefix_sum[1]
         answer = max(a*2+c, b*2+d,answer)
 
-# 벌통이 양 끝을 제외한 곳에 있느 경우
+# 벌통이 양 끝을 제외한 곳에 있는 경우
 for i in range(2,n):
     left = left_prefix_sum[i] - left_prefix_sum[1]
     right = right_prefix_sum[n-i+1] - right_prefix_sum[1]

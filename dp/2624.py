@@ -14,5 +14,4 @@ for coin,cnt in coines:
         for i in range(1,cnt+1):
             if money-coin*i >= 0:
                 dp[money] += dp[money-coin*i]
-
 print(dp[T])
